@@ -33,9 +33,9 @@
   
     // Attaching event to button if it exists
     // Replace the Element Selector "_some_element_selector" with the Element Selector representing the "Accept All" call to action (button) of your CMP.
-    var btn = document.getElementsByClassName("cc-nb-okagree");
+    var btn = document.getElementByClassName("cc-nb-okagree");
   
     if (btn) {
-      btn.addEventListener("click", triggerUtiq);
+      btn[0].addEventListener("click", triggerUtiq);
     }
   })();
