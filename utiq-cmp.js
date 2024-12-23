@@ -8,7 +8,7 @@
           const s = document.createElement("script");
           s.type = "text/javascript";
           // Replace with the corresponding subdomain -DONE
-          s.src = "local-utiq-loader.js";
+          s.src = "http://utiq.plamiche.com/utiqLoader.js";
           s.async = true;
           document.head.appendChild(s);
         }
