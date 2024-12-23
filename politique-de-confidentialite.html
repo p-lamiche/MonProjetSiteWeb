@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caractéristiques</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <script>
+      window.Utiq = window.Utiq || {};
+      window.Utiq.config = {
+        CMP: "none", // For Separate Pop-up - it would be other ID for Integrated Model
+        //cmpUtiqPurposeId: "", // Only if you use Integrated Model
+        //cmpUtiqVendorId: "", // Only if you use Integrated Model
+        customizationOptions: {
+          language: "fr" // Optional attribute. Allowed values: en, de, es, fr or it
+        }
+      };
+      (() => {
+        const s = document.createElement("script")
+        s.type = 'text/javascript';
+        s.src = "https://utiq.plamiche.com/utiqLoader.js"
+        s.async = true;
+        document.head.appendChild(s)
+      })();
+      (() => {
+        const s = document.createElement("script")
+        s.type = 'text/javascript';
+        s.src = "https://utiq.plamiche.com/utiqPrivacyPolicy.js"
+        s.async = true;
+        document.head.appendChild(s)
+      })();
+    </script>
+    <style>
+      /* Example Privacy Policy CSS Styles */
+  
+      #utiq-privacy-policy h2,
+      #utiq-privacy-policy p,
+      #utiq-privacy-policy a,
+      #utiq-privacy-policy li {
+        font-family: "Sofia Pro", "Century Gothic", "Arial", sans-serif;
+      }
+  
+      #utiq-privacy-policy h2 {
+        font-size: 1.5em;
+      }
+  
+      #utiq-privacy-policy a {
+        color: #db214f;
+      }
+  
+      #utiq-privacy-policy a:hover {
+        color: #7a0320;
+      }
+  
+    </style>
+  </head>
 
-<body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="logo"><img src="assets/logo.png" alt="Mon Logo"></a>
-                <ul class="menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="features.html" class="active">Features</a></li>
-                    <li><a href="about.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <section class="features-detail">
-        <div class="container">
-            <h1>Politique de confidentialité</h1>
-            <p>La société PLamiche, (ci-après « la Société » ou « nous ») attache la plus grande importance au respect de votre vie
-                privée, à la confidentialité, la sécurité et à l’intégrité de vos données personnelles. C’est pourquoi, nous nous engageons
-                à ce que la collecte et le traitement d'informations à caractère personnel soient effectués conformément au Règlement
-                UE n°2016/679 du Parlement Européen et du Conseil du 27 avril 2016 relatif à la Protection des Personnes Physiques à
-                l’égard du traitement des données à caractère personnel et à la libre circulation de ces données ci-après « RGPD » et à
-                l’ensemble des dispositions de la réglementation française applicable en la matière.</p>
-        </div>
-    </section>
+  <body>
+    <h2>Notre utilisation de la technologie Utiq</h2>
+    <div id="utiq-privacy-policy"></div>
 
     <!-- Footer -->
     <footer style="text-align: center; font-family: Arial, sans-serif; font-size: 14px; margin-top: 20px;">
@@ -42,6 +64,5 @@
         <img src="assets/utiq-logo.png" alt="Utiq Logo" style="height: 20px; vertical-align: middle; margin: 0 5px;"> |
         <a href="https://www.plamiche.com/politique-de-confidentialite" style="text-decoration: none; color: blue; margin: 0 10px;">Confidentialité</a>
     </footer>
-</body>
-
+  </body>
 </html>
